@@ -1,27 +1,21 @@
 # eight_ball_bot
 
-TODO: Write a description here
+Test project for Crystal lang & Tourmaline framework
 
 ## Installation
 
-TODO: Write installation instructions here
+```crystal
+shards install
+crystal run src/eight_ball_bot.cr
+```
 
 ## Usage
 
-TODO: Write usage instructions here
+Find [@EightBallCrystalBot](https://t.me/crystal_pet_bot) on telegram
 
-## Development
-
-TODO: Write development instructions here
-
-## Contributing
-
-1. Fork it (<https://github.com/your-github-user/eight_ball_bot/fork>)
-2. Create your feature branch (`git checkout -b my-new-feature`)
-3. Commit your changes (`git commit -am 'Add some feature'`)
-4. Push to the branch (`git push origin my-new-feature`)
-5. Create a new Pull Request
+Bot commands:
+- `/shake` - print out an answer
 
 ## Contributors
 
-- [Egor Romanov](https://github.com/your-github-user) - creator and maintainer
+- [Egor Romanov](https://github.com/your-github-user) - creator
