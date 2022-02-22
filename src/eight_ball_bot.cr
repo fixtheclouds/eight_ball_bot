@@ -30,11 +30,18 @@ class EightBallBot < Tourmaline::Client
 
   @[Command("start")]
   def start_command(ctx)
-    ctx.message.reply(<<-STRING
+    ctx.message.reply(
+      <<-STRING
       Welcome to EightBallBot!
       Send a yes-no question and get an answer.
       Be sure to include the question mark at the end.
-    STRING)
+      STRING
+    )
+  end
+
+  @[Hears(/.+\?/)]
+  def on_question(ctx)
+    ctx.message.reply(random_statement)
   end
 
   private def random_statement
