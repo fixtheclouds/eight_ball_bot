@@ -1,9 +1,7 @@
 require "./spec_helper"
 
 describe EightBallBot do
-  # TODO: Write tests
-
   it "works" do
-    false.should eq(true)
+    EightBallBot.new(bot_token: ENV["API_KEY"]).start_command(nil).should be_a(String)
   end
 end
